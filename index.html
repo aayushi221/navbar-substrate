@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>navbar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <a>
+        <h1 class="logo">Coinskite</h1>
+      </a>
+    </div>
+  </header>
+  <div class="flex">
+    <div class="use-case">
+      <h1 class="first">Use Case</h1>
+    </div>
+
+    <!-- shapes -->
+    <div class="container">
+      <div class="shapes">
+        <div class="square"></div>
+        <div class="triangle"></div>
+        <div class="circle">
+          <div class="outer-circle">
+          </div>
+        </div>
+
+        <div class="triangle">
+          <svg height="220" width="400">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,148,204);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(162,57,234);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <polygon points="50 15, 100 100, 0 100" stroke="url(#grad1)" fill="none" stroke-width="5" />
+          </svg>
+        </div>
+        <div class="pentagon">
+          <svg height="220" width="400">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,148,204);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(162,57,234);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <polygon points="60 13,110 48,92 110,30 110,13 48" stroke="url(#grad1)" fill="none" stroke-width="5" />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
+    <marquee behavior="scroll" direction="up" Scrolldelay=300 scrolldelay: 100>capital markets</marquee>
+
+    <div class="container">
+      <h1 class="blockchain">blockchain</h1>
+    </div>
+
+    <div class="down-arrow">
+      <img src="https://img.icons8.com/ios-glyphs/50/ffffff/long-arrow-down.png" />
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="temp.js"></script>
+</body>
+
+</html>

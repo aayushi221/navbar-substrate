@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+
+body {
+  margin: 0;
+  background: #000;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #000;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.first {
+  position: absolute;
+  top: 23%;
+  left: 30%;
+
+  color: #fff;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+marquee {
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 13%;
+  font-family: "Londrina Outline";
+  font-size: 50px;
+  /* left:38% */
+}
+.blockchain {
+  position: absolute;
+  top: 63%;
+  left: 27%;
+  color: #fff;
+  align-items: center;
+  /* left:42%; */
+}
+.down-arrow {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+}
+
+.square {
+  width: 188px;
+  height: 188px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid transparent;
+  border-image: linear-gradient(
+    -45deg,
+    #e0bbe4,
+    #957dad,
+    #d291bc,
+    #fec8d8,
+    #ffdfd3
+  );
+  border-image-slice: 1;
+}
+
+.circle {
+  position: absolute;
+  top: 36%;
+  left: 43.5%;
+  background: -webkit-linear-gradient(
+    left top,
+    purple 10%,
+    #957dad 35%,
+    #d291bc 50%
+  );
+  width: 188px;
+  height: 188px;
+  border-radius: 100px;
+  padding: 4px;
+}
+.outer-circle {
+  background: #000;
+  width: 188px;
+  height: 188px;
+  border-radius: 100px;
+}
+.triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.pentagon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media (min-width: 600px) {
+  .first {
+    position: absolute;
+    top: 23%;
+    left: 45%;
+    /* top: 40%;
+    left: 50%; */
+    color: #fff;
+    align-items: center;
+  }
+  marquee {
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    font-family: "Londrina Outline";
+    font-size: 50px;
+  }
+  .blockchain {
+    position: absolute;
+    top: 65%;
+    left: 44%;
+    /* top: 60%;
+    left: 50%; */
+    color: #fff;
+    align-items: center;
+  }
+
+  .down-arrow {
+    position: absolute;
+    top: 90%;
+    left: 48%;
+  }
+}
