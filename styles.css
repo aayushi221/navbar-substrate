@@ -108,14 +108,28 @@ marquee {
 }
 .triangle {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 20.8%;
+  left: 41.2%;
 }
+
+.triangle {
+  -webkit-text-stroke: 4px #957dad;
+  color: transparent;
+  font-size: 280px;
+}
+
 .pentagon {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 24%;
+  left: 43%;
 }
+
+.pentagon {
+  -webkit-text-stroke: 4px #d291bc;
+  color: transparent;
+  font-size: 264px;
+}
+
 
 @media (min-width: 600px) {
   .first {
