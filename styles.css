@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  width: 20%;
+  width: 60%;
   margin: 5%;
 }
 
@@ -139,65 +139,71 @@ a {
   overflow-x: hidden;
   }
 
+  
  
   .first {
     position: absolute;
-    top: 21%;
-    left: 28%;
+    top: 20%;
+    left: 34%;
  
   }
 
   .square {
     position: absolute;
     top: 43%;
-    left: 45%;
+    left: 50%;
   }
 
   .circle {
     position: absolute;
     top: -52px;
-    left: 12%;
+    left: 17%;
   }
   
   .triangle {
     position: absolute;
     top: 13.8%;
-    left: 11.2%;
+    left: 17.2%;
    
   }
   
   .pentagon {
     position: absolute;
     top: 16%;
-    left: 19%;
+    left: 25%;
 }
 
+
+
     .scroller>div {
+      /* background-color: blue; */
       position: absolute;
-      width: 100px;
-      height: 100px;
+      width: 100%;
+      height: 21%;
       top: 0px;
-    right: 3px;
-    font-size: 15px;
+      left: 0%;
+      font-size: 15px;
     }
 
     .container-text{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 36%;
-    left: -38%;
+      /* background-color: pink; */
+
+      height: 38%;
+      width: 82%;
+      position: absolute;
+      top: 40%;
+      left: 10%;
     }
   .blockchain {
     position: absolute;
     top: 65%;
-    left: 26%;
+    left: 32%;
     
   }
 
   .down-arrow {
     position: absolute;
-    top: 77%;
-    left: 39%;
+    top: 81%;
+    left: 46%;
   }
 }
