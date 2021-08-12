@@ -87,32 +87,17 @@ marquee {
 
 .circle {
   position: absolute;
-  top: 36%;
-  left: 43.5%;
-  background: -webkit-linear-gradient(
-    left top,
-    purple 10%,
-    #957dad 35%,
-    #d291bc 50%
-  );
-  width: 188px;
-  height: 188px;
-  border-radius: 100px;
-  padding: 4px;
+  top: 0;
+  left: 41%;
+  -webkit-text-stroke: 4px #957dad;
+  color: transparent;
+  font-size: 450px;
 }
-.outer-circle {
-  background: #000;
-  width: 188px;
-  height: 188px;
-  border-radius: 100px;
-}
+
 .triangle {
   position: absolute;
   top: 20.8%;
   left: 41.2%;
-}
-
-.triangle {
   -webkit-text-stroke: 4px #957dad;
   color: transparent;
   font-size: 280px;
@@ -122,9 +107,6 @@ marquee {
   position: absolute;
   top: 24%;
   left: 43%;
-}
-
-.pentagon {
   -webkit-text-stroke: 4px #d291bc;
   color: transparent;
   font-size: 264px;
