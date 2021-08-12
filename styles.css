@@ -12,31 +12,21 @@ body {
   background: #000;
   font-family: sans-serif;
   font-weight: 800;
-  width: 100vw;
+  width: 80%;
   height: 100vh;
+  overflow: hidden;
 
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 20%;
+  margin: 5%;
 }
 
 header {
   background: #000;
 }
 
-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.logo {
-  float: left;
-  color: #fff;
-  padding: 10px 0;
-}
 
 .first {
   position: absolute;
@@ -182,13 +172,22 @@ a {
     left: 19%;
 }
 
-    .scroller {
+    .scroller>div {
       position: absolute;
-      top: -50px;
-    right: 384px;
+      width: 100px;
+      height: 100px;
+      top: 0px;
+    right: 3px;
     font-size: 15px;
     }
 
+    .container-text{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 36%;
+    left: -38%;
+    }
   .blockchain {
     position: absolute;
     top: 65%;
