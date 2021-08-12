@@ -2,8 +2,6 @@ $(document).ready(function slideIt() {
 
     $("#shapes > div").hide();
 
-
-
     var sizeLoop = $("#shapes > div").length;
     var startLoop = 0;
 
