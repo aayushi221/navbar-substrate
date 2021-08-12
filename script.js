@@ -1,3 +1,5 @@
+// Transition of shapes 
+
 $(document).ready(function slideIt() {
 
     $("#shapes > div").hide();
