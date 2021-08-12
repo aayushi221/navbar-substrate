@@ -1,14 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
-
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow:hidden;
+}
 body {
   margin: 0;
   background: #000;
   font-family: sans-serif;
   font-weight: 800;
+  width: 100vw;
+  height: 100vh;
+
 }
 
 .container {
@@ -35,8 +41,7 @@ header::after {
 .first {
   position: absolute;
   top: 23%;
-  left: 30%;
-
+  left: 45%;
   color: #fff;
   align-items: center;
 }
@@ -47,19 +52,10 @@ a {
   font-size: 20px;
 }
 
-marquee {
-  color: white;
-  position: absolute;
-  top: 45%;
-  left: 13%;
-  font-family: "Londrina Outline";
-  font-size: 50px;
-  /* left:38% */
-}
 .blockchain {
   position: absolute;
-  top: 63%;
-  left: 27%;
+  top: 75%;
+  left: 45%;
   color: #fff;
   align-items: center;
   /* left:42%; */
@@ -67,7 +63,7 @@ marquee {
 .down-arrow {
   position: absolute;
   top: 90%;
-  left: 45%;
+  left: 48%;
 }
 
 .square {
@@ -125,11 +121,11 @@ marquee {
   -webkit-text-stroke: 2px #fff;
   color: transparent;
   position: absolute;
-  top: 15%;
+  top: 44%;
   left:17%;
 }
 .container-text > div{
-  height: 500px;
+  height: 100px;
   width: 1000px;
   background-color: transparent;
   overflow: hidden;
@@ -146,37 +142,63 @@ marquee {
   transition: all 0.5s;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+
+  body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  }
+
+ 
   .first {
     position: absolute;
-    top: 23%;
-    left: 45%;
-    /* top: 40%;
-    left: 50%; */
-    color: #fff;
-    align-items: center;
+    top: 21%;
+    left: 28%;
+ 
   }
-  marquee {
-    color: white;
+
+  .square {
     position: absolute;
-    top: 45%;
-    left: 40%;
-    font-family: "Londrina Outline";
-    font-size: 50px;
+    top: 43%;
+    left: 45%;
   }
+
+  .circle {
+    position: absolute;
+    top: -52px;
+    left: 12%;
+  }
+  
+  .triangle {
+    position: absolute;
+    top: 13.8%;
+    left: 11.2%;
+   
+  }
+  
+  .pentagon {
+    position: absolute;
+    top: 16%;
+    left: 19%;
+}
+
+    .scroller {
+      position: absolute;
+      top: -50px;
+    right: 384px;
+    font-size: 15px;
+    }
+
   .blockchain {
     position: absolute;
     top: 65%;
-    left: 44%;
-    /* top: 60%;
-    left: 50%; */
-    color: #fff;
-    align-items: center;
+    left: 26%;
+    
   }
 
   .down-arrow {
     position: absolute;
-    top: 90%;
-    left: 48%;
+    top: 77%;
+    left: 39%;
   }
 }
