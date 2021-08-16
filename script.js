@@ -26,3 +26,20 @@ $(document).ready(function slideIt() {
 
 
 });
+
+
+const divs = document.querySelectorAll(".scroller > div");
+
+// divs[2].scrollIntoView({ inline: "center", top: "-20px" });
+
+let i = 0;
+setInterval(() => {
+  if (i % 17 == 0) {
+    document.querySelector(".transition").style.scrollBehavior = "auto";
+    divs[i % 17].scrollIntoView({ inline: "center", top: "-20px" });
+    document.querySelector(".transition").style.scrollBehavior = "smooth";
+  } else {
+    divs[i % 17].scrollIntoView({ block: "center", top: "-20px" });
+  }
+  i++;
+}, 1500);
