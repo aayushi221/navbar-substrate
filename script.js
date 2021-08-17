@@ -1,38 +1,10 @@
-// Transition of shapes 
-
-$(document).ready(function slideIt() {
-
-    $("#shapes > div").hide();
-
-    var sizeLoop = $("#shapes > div").length;
-    var startLoop = 0;
-
-    $("#shapes > div").first().eq(startLoop).fadeIn(500);
-
-
-    setInterval(function () {
-
-        $("#shapes > div").eq(startLoop).fadeOut(1000);
-        if (startLoop == sizeLoop - 1) {
-            startLoop = 0
-        }
-        else {
-            startLoop++;
-        }
-
-        $("#shapes > div").eq(startLoop).slideDown(700);
-
-    }, 2000);
-
-
-});
-
-
+// Transition of shapes
 const divs = document.querySelectorAll(".scroller > div");
 
 // divs[2].scrollIntoView({ inline: "center", top: "-20px" });
 
 let i = 0;
+divs[i].scrollIntoView({ block: "center", top: "-20px" });
 setInterval(() => {
   if (i % 17 == 0) {
     document.querySelector(".transition").style.scrollBehavior = "auto";
@@ -43,3 +15,23 @@ setInterval(() => {
   }
   i++;
 }, 1500);
+
+$(document).ready(function slideIt() {
+  $("#shapes > div").hide();
+
+  var sizeLoop = $("#shapes > div").length;
+  var startLoop = 0;
+
+  $("#shapes > div").first().eq(startLoop).fadeIn(100);
+
+  setInterval(function () {
+    $("#shapes > div").eq(startLoop).fadeOut(10);
+    if (startLoop == sizeLoop - 1) {
+      startLoop = 0;
+    } else {
+      startLoop++;
+    }
+
+    $("#shapes > div").eq(startLoop).fadeIn(1);
+  }, 2000);
+});
