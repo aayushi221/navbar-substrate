@@ -1,68 +1,86 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow:hidden;
+  overflow: hidden;
 }
 body {
   margin: 0;
   background: #000;
   font-family: sans-serif;
   font-weight: 800;
-  width: 80%;
-  height: 100vh;
-  overflow: hidden;
-
+  width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 60%;
-  margin: 5%;
+  position: fixed;
+  /*   background-color: blue; */
+  width: 100%;
+  height: auto;
+  margin: 10px 20px;
 }
 
 header {
-  background: #000;
+  /*   background: #000; */
+/*   background-color: orange; */
 }
-
-
-.first {
-  position: absolute;
-  top: 23%;
-  left: 45%;
-  color: #fff;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 7% auto 7%;
+  max-width: 700px;
+  height: auto;
+  font-size: 30px;
+/*   background-color: cyan; */
 }
 
 a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+/*   background-color: red; */
 }
 
 .blockchain {
-  position: absolute;
-  top: 75%;
-  left: 45%;
-  color: #fff;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  /* left:42%; */
+  color: #fff;
+  margin: 5% auto 10%;
+  max-width: 700px;
+  height: auto;
+  font-size: 30px;
+/*   background-color: cyan; */
 }
+
 .down-arrow {
   position: absolute;
   top: 90%;
   left: 48%;
+  margin-top: 5px;
+/*   background-color: cyan; */
 }
 
 .square {
   width: 188px;
   height: 188px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 700px;
   border: 4px solid transparent;
   border-image: linear-gradient(
     -45deg,
@@ -76,131 +94,111 @@ a {
 }
 
 .circle {
-  position: absolute;
-  top: 0;
-  left: 41%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -38% auto 0;
+  padding: 0;
+  max-width: 700px;
   -webkit-text-stroke: 4px #957dad;
   color: transparent;
   font-size: 450px;
+  height: 300px;
 }
 
 .triangle {
-  position: absolute;
-  top: 20.8%;
-  left: 41.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -40% auto -25%;
+  padding: 0;
+  max-width: 700px;
   -webkit-text-stroke: 4px #957dad;
   color: transparent;
   font-size: 280px;
 }
 
 .pentagon {
-  position: absolute;
-  top: 24%;
-  left: 43%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -44% auto -35%;
+  padding: 0;
+  max-width: 700px;
   -webkit-text-stroke: 4px #d291bc;
   color: transparent;
   font-size: 264px;
 }
 
+/* ====================== */
+
 .container-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  position: absolute;
+  top: 45%;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   -webkit-text-stroke: 2px #fff;
   color: transparent;
-  position: absolute;
-  top: 44%;
-  left:17%;
+/*   background-color: pink; */
 }
-.container-text > div{
-  height: 100px;
-  width: 1000px;
-  background-color: transparent;
-  overflow: hidden;
-  scroll-behavior:smooth;
-
-}
-.scroller > div{
-  width: 1000px;
-  height: 500px;
-  background-color: transparent;
+.container-text > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px;
+  max-width: 400px;
+  background-color: transparent;
+  overflow: hidden;
+  scroll-behavior: smooth;
+/* /*   background-color: grey; */ */
+}
+.scroller > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  background-color: transparent;
+  text-align: center;
   transition: all 0.5s;
+/*   background-color: green; */
 }
-
-@media (max-width: 600px) {
-
-  body {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  }
-
-  
- 
-  .first {
-    position: absolute;
-    top: 20%;
-    left: 34%;
- 
-  }
-
-  .square {
-    position: absolute;
-    top: 43%;
-    left: 50%;
-  }
-
-  .circle {
-    position: absolute;
-    top: -52px;
-    left: 17%;
-  }
-  
-  .triangle {
-    position: absolute;
-    top: 13.8%;
-    left: 17.2%;
-   
-  }
-  
-  .pentagon {
-    position: absolute;
-    top: 16%;
-    left: 25%;
-}
-
-
-
-    .scroller>div {
-      
-        display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: -50%;
-      font-size: 15px;
-    }
-
-    .container-text{
-      height: 10%;
-      width: 100%;
-      position: absolute;
-      top: 38%;
-      left: 0;
-    }
+@media (max-width: 910px) {
   .blockchain {
-    position: absolute;
-    top: 65%;
-    left: 32%;
+    margin: 2% auto 0;
+  }
+  .first {
+    margin-top: 20%;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .first {
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+  .blockchain {
+    margin-bottom: 0;
+  }
+
+  .container-text {
+    top: 45%;
   }
 
   .down-arrow {
-    position: absolute;
-    top: 81%;
-    left: 46%;
+    left: 45%;
+  }
+}
+@media (max-width: 910px) {
+  .container-text {
+    top: 35%;
   }
 }
