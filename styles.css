@@ -70,6 +70,9 @@ a {
 /*   background-color: cyan; */
 }
 
+.shapes {
+  height: auto;
+}
 .square {
   width: 188px;
   height: 188px;
@@ -191,6 +194,9 @@ a {
   }
   .shapes {
     margin-top: 40%;
+  }
+  .circle {
+    font-size: 250px;
   }
 
   .container-text {
