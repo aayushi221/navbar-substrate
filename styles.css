@@ -24,10 +24,7 @@ body {
   margin: 10px 20px;
 }
 
-header {
-  /*   background: #000; */
-/*   background-color: orange; */
-}
+
 section {
   display: flex;
   flex-direction: column;
@@ -110,7 +107,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -40% auto -25%;
+  margin: -40% auto -30%;
   padding: 0;
   max-width: 700px;
   -webkit-text-stroke: 4px #957dad;
@@ -136,6 +133,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
   position: absolute;
   top: 45%;
@@ -149,17 +147,20 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100px;
   max-width: 400px;
   background-color: transparent;
   overflow: hidden;
   scroll-behavior: smooth;
-/* /*   background-color: grey; */ */
+/* /*   background-color: grey; */ 
 }
 .scroller > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
   width: 400px;
   height: 300px;
   background-color: transparent;
@@ -182,18 +183,29 @@ a {
   }
 
   .first {
-    margin-top: 20%;
+    margin-top: 30%;
     margin-bottom: 10%;
   }
   .blockchain {
     margin-bottom: 0;
   }
+  .shapes {
+    margin-top: 40%;
+  }
 
   .container-text {
     top: 45%;
+    height: auto;
+  max-width: 200px;
+  }
+  .scroller >div {
+    width: 200px;
+    height: 300px;
+    font-size: 15px;
   }
 
   .down-arrow {
+    margin-top: -30%;
     left: 45%;
   }
 }
