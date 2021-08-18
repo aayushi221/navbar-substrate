@@ -192,13 +192,10 @@ a {
   .blockchain {
     margin-bottom: 0;
   }
- .circle {
-   font-size: 296px;
- }
+
   .container-text {
-    top: 45%;
-    height: auto;
-    max-width: 200px;
+    position: absolute;
+    bottom: 40%;
   }
   .scroller >div {
     width: 200px;
