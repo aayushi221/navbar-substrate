@@ -187,22 +187,18 @@ a {
 
   .first {
     margin-top: 30%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
   }
   .blockchain {
     margin-bottom: 0;
   }
-  .shapes {
-    margin-top: 40%;
-  }
-  .circle {
-    font-size: 250px;
-  }
-
+ .circle {
+   font-size: 296px;
+ }
   .container-text {
     top: 45%;
     height: auto;
-  max-width: 200px;
+    max-width: 200px;
   }
   .scroller >div {
     width: 200px;
